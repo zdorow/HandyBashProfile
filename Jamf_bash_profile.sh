@@ -45,4 +45,4 @@ function sign () {
 function sslexpire () {
 	echo -n "The signing certificate expiration date is: " 
 	openssl x509 -enddate -noout -in "${1}" | sed 's/notAfter=//g'
-
+}
